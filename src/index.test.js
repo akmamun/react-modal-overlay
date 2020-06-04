@@ -1,4 +1,4 @@
-import { Modal} from '.'
+import { Modal } from '.'
 
 describe('Modal', () => {
   it('is truthy', () => {

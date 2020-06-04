@@ -49,5 +49,14 @@
   },
   "files": [
     "dist"
+  ],
+  "tags": [
+    "react",
+    "modal"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "modal"
   ]
 }

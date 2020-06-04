@@ -1,18 +1,28 @@
 # react-modal-overlay
 
-### Accessible modal overlay component for React JS
+Accessible simple modal overlay component for React JS
+
 [![NPM](https://img.shields.io/npm/v/react-modal-overlay.svg)](https://www.npmjs.com/package/react-modal-overlay) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.org/akmamun/react-modal-overlay.svg?branch=master)](https://travis-ci.org/akmamun/react-modal-overlay)
 
-## Install
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demos](#demos)
+
+## Installation
+
+To install, you can use [npm](https://npmjs.com/) or [yarn](https://yarnpkg.com):
 
 ```bash
-npm install --save react-modal-overlay
+npm install react-modal-overlay
+yarn add react-modal-overlay
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from "react";
+import React, { Component } from 'react'
 import { Modal } from 'react-modal-overlay'
 import 'react-modal-overlay/dist/index.css'
 
@@ -41,7 +51,9 @@ export default class ExampleModal extends Component {
 ```
 
 ## Demos
-- [Minimal example](https://codesandbox.io/s/react-modal-overlay-wybon) 
+
+- [Minimal example](https://codesandbox.io/s/react-modal-overlay-wybon)
+
 ## License
 
 MIT © [akmamun](https://github.com/akmamun)
