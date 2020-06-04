@@ -21,6 +21,29 @@ yarn add react-modal-overlay
 
 ## Usage
 
+- Using Hooks
+
+```jsx
+import React, { useState } from 'react'
+import { Modal } from 'react-modal-overlay'
+import 'react-modal-overlay/dist/index.css'
+
+export default function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <div>
+      <button onClick={() => setIsOpen(true)}>Click Modal!</button>
+      <Modal show={isOpen} closeModal={() => setIsOpen(false)}>
+        <h4> here is hook modal data </h4>
+      </Modal>
+    </div>
+  )
+}
+```
+
+- Class Based Component
+
 ```jsx
 import React, { Component } from 'react'
 import { Modal } from 'react-modal-overlay'
@@ -52,7 +75,9 @@ export default class ExampleModal extends Component {
 
 ## Demos
 
-- [Minimal example](https://codesandbox.io/s/react-modal-overlay-wybon)
+- [Hooks example](https://codesandbox.io/s/react-modal-overlay-wybon?file=/src/Hooks.js)
+
+- [Class based Component example](https://codesandbox.io/s/react-modal-overlay-wybon)
 
 ## License
 
