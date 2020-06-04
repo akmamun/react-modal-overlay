@@ -1,7 +1,7 @@
 import React from 'react'
 import ModalStyle from './styles.module.css'
 
-export default Modal = ({ children, className, show, closeModal }) => (
+export const Modal = ({ children, className, show, closeModal }) => (
   <div className={`${ModalStyle.modal} ${className}`}
     style={{ display: show ? 'block' : 'none' }}>
     <div className={ModalStyle.overlay} onClick={closeModal} />
