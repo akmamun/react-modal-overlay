@@ -1,6 +1,15 @@
 import React from 'react'
-import styles from './styles.module.css'
+import ModalStyle from './styles.module.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default Modal = ({ children, className, show, closeModal }) => (
+  <div className={`${ModalStyle.modal} ${className}`}
+    style={{ display: show ? 'block' : 'none' }}>
+    <div className={ModalStyle.overlay} onClick={closeModal} />
+    <div className={ModalStyle.modalContent}>
+      <span className={ModalStyle.close} onClick={closeModal}>
+        &times;
+      </span>
+      {children}
+    </div>
+  </div>
+)
